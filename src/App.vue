@@ -3,9 +3,9 @@ import { RouterLink, RouterView } from 'vue-router'
 
 import HomeView from './views/HomeView.vue'
 
-export default{
-  methods:{
-    scroll(){
+export default {
+  methods: {
+    scroll() {
       window.scrollTo(0, 1000)
       console.log("yes");
     }
@@ -24,27 +24,31 @@ export default{
     </nav>
   </header>
 
-  <HomeView/>
+  <HomeView />
 
   <RouterView />
-
 </template>
 
 <style scoped>
-header{
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-header a{
+header a {
   padding: 20px;
   text-decoration: none;
   color: black;
 }
 
-header a:hover{
+header a:hover {
   opacity: 0.8;
 }
 
+@media (max-width: 600px) {
+  header {
+    display: none;
+  }
+}
 </style>

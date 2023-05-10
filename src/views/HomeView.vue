@@ -31,7 +31,7 @@ import forms from '@/views/forms.vue';
     <section>
       <skills />
     </section>
-     <section>
+    <section>
       <work />
     </section>
     <section>
@@ -40,7 +40,6 @@ import forms from '@/views/forms.vue';
     <section>
       <forms />
     </section>
-
   </main>
 </template>
 
@@ -91,16 +90,36 @@ main {
 
 .img-container {
   display: flex;
-  
+
   justify-content: center;
   align-items: center;
- 
+
   height: 100%;
   width: 50%;
 }
-.img-container img{
-  height: 80%; 
+
+.img-container img {
+  height: 80%;
 }
 
+@media (max-width: 600px) {
+  #hero {
+    flex-direction: column;
+    height: 100%;
+    width: 100vw;
 
-</style>
+    align-items: center;
+
+    background-color: red;
+  }
+
+  #hero img {
+    height: 500px;
+  }
+
+  .content {
+    padding: 2rem;
+    width: 100%;
+
+  }
+}</style>
