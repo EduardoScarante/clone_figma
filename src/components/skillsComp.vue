@@ -28,11 +28,11 @@ section{
     display: flex;
     justify-content: center;
 
+
     margin-top: 100px;
     margin-bottom: 100px;
 }
 #content {
-    padding: 20px;
     height: 450px;
     width: 250px;
     color: black;
@@ -42,12 +42,11 @@ section{
     flex-direction: column;
     align-items: center;
     text-align: center;
-
 }
 
 #content img {
-    width: 125px;
-    height: 125px;
+    width: 150px;
+    height: 150px;
 }
 
 #content p{

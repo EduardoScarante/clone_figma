@@ -22,13 +22,12 @@
   display: flex;
   flex-direction: row;
 
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
 }
 
 main img{
-  height: 15%;
-  width: auto;
+  width: max-content;
 }
 
 </style>

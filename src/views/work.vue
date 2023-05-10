@@ -58,7 +58,10 @@ export default {
   <p>Latest Work</p>
   <div class="main">
     <div id="cards" v-for="x in infos">
-      <worksComp :imagePath='x.imagePath' :Title='x.Title' :subTitle='x.subTitle' />
+      <worksComp 
+      :imagePath='x.imagePath' 
+      :Title='x.Title' 
+      :subTitle='x.subTitle' />
     </div>
   </div>
 </template>
@@ -70,7 +73,7 @@ export default {
 
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 #cards {

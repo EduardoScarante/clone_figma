@@ -1,6 +1,6 @@
 <script>
 
-import skillsComponent from '../components/skillsComponent.vue'
+import skillsComponent from '../components/skillsComp.vue'
 
 /* IMPORT IMAGES */
 import img1 from '@/assets/skills/img1.png'
@@ -37,20 +37,20 @@ export default {
 </script>
 
 <template>
-  <main id="main">
-    <div id="card" v-for="x in infos">
+  <main id="content">
+    <div v-for="x in infos">
       <skillsComponent :path="x.imagePath" :title="x.title" :subtitle="x.subtitle" />
     </div>
   </main>
 </template>
 
 <style scoped>
-#main{ 
+#content{ 
   display: flex;
   flex-direction: row;
-}
+  justify-content: space-between;
 
-#card {
   width: 100%;
 }
+
 </style>

@@ -3,6 +3,14 @@ import { RouterLink, RouterView } from 'vue-router'
 
 import HomeView from './views/HomeView.vue'
 
+export default{
+  methods:{
+    scroll(){
+      window.scrollTo(0, 1000)
+      console.log("yes");
+    }
+  }
+}
 
 </script>
 

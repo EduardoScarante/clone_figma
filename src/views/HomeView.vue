@@ -34,12 +34,12 @@ import forms from '@/views/forms.vue';
      <section>
       <work />
     </section>
-<!--     <section>
+    <section>
       <clients />
     </section>
     <section>
       <forms />
-    </section> -->
+    </section>
 
   </main>
 </template>
