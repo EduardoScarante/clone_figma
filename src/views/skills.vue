@@ -45,9 +45,7 @@ export default {
 </template>
 
 <style scoped>
-#main{
-
-  
+#main{ 
   display: flex;
   flex-direction: row;
 }

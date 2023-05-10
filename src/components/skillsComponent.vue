@@ -49,4 +49,14 @@ section{
     width: 125px;
     height: 125px;
 }
+
+#content p{
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+#content .sub{
+    font-weight: 400;
+    font-size: 1rem;
+}
 </style>
