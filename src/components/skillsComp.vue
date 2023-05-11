@@ -24,14 +24,14 @@ export default {
 
 
 <style scoped>
-section{
+section {
     display: flex;
     justify-content: center;
-
 
     margin-top: 100px;
     margin-bottom: 100px;
 }
+
 #content {
     height: 450px;
     width: 250px;
@@ -49,13 +49,21 @@ section{
     height: 150px;
 }
 
-#content p{
+#content p {
     font-weight: 600;
     font-size: 1.5rem;
 }
 
-#content .sub{
+#content .sub {
     font-weight: 400;
     font-size: 1rem;
+}
+
+@media (max-width: 600px) {
+    section {
+
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
 }
 </style>

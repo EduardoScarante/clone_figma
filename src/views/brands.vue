@@ -14,8 +14,7 @@
 </template>
 
 <style scoped>
-
-#content{
+#content {
   height: 180px;
 
 
@@ -26,8 +25,14 @@
   align-items: center;
 }
 
-main img{
+main img {
   width: max-content;
 }
 
+@media (max-width: 600px) {
+  #content {
+    width: 100vw;
+    flex-wrap: wrap;
+  }
+}
 </style>

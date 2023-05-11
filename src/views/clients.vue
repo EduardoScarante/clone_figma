@@ -60,4 +60,10 @@ p {
   font-weight: 600;
   font-size: 2rem;
 }
+
+@media (max-width: 600px) {
+  #container {
+    flex-direction: column;
+  }
+}
 </style>

@@ -28,19 +28,22 @@ import forms from '@/views/forms.vue';
     <section>
       <brands />
     </section>
+
     <section>
       <skills />
     </section>
-     <section>
+
+    <section>
       <work />
     </section>
+
     <section>
       <clients />
     </section>
+
     <section>
       <forms />
     </section>
-
   </main>
 </template>
 
@@ -91,16 +94,41 @@ main {
 
 .img-container {
   display: flex;
-  
+
   justify-content: center;
   align-items: center;
- 
+
   height: 100%;
   width: 50%;
 }
-.img-container img{
-  height: 80%; 
+
+.img-container img {
+  height: 80%;
 }
 
+@media (max-width: 600px) {
+  #hero {
+    flex-direction: column;
+    height: 100%;
+    width: 100vw;
 
+    align-items: center;
+
+    padding-bottom: 40px;
+  }
+
+  #hero img {
+    width: 70%;
+  }
+
+  .img-container {
+    width: 100%;
+  }
+
+  .content {
+    padding: 2rem;
+    width: 100%;
+
+  }
+}
 </style>
