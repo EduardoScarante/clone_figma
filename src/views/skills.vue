@@ -45,7 +45,7 @@ export default {
 </template>
 
 <style scoped>
-#content{ 
+#content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -53,4 +53,12 @@ export default {
   width: 100%;
 }
 
+@media (max-width: 600px) {
+  #content {
+
+    flex-direction: column;
+    height: 100%;
+    width: 100vw;
+  }
+}
 </style>

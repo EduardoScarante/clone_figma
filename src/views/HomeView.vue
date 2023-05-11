@@ -28,15 +28,19 @@ import forms from '@/views/forms.vue';
     <section>
       <brands />
     </section>
+
     <section>
       <skills />
     </section>
+
     <section>
       <work />
     </section>
+
     <section>
       <clients />
     </section>
+
     <section>
       <forms />
     </section>
@@ -110,11 +114,15 @@ main {
 
     align-items: center;
 
-    background-color: red;
+    padding-bottom: 40px;
   }
 
   #hero img {
-    height: 500px;
+    width: 70%;
+  }
+
+  .img-container {
+    width: 100%;
   }
 
   .content {
@@ -122,4 +130,5 @@ main {
     width: 100%;
 
   }
-}</style>
+}
+</style>

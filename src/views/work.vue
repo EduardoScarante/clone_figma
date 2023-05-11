@@ -50,6 +50,11 @@ export default {
 
       ]
     }
+  },
+  methods: {
+    teste() {
+      console.log("mesnagem bonita");
+    }
   }
 }
 </script>
@@ -58,10 +63,7 @@ export default {
   <p>Latest Work</p>
   <div class="main">
     <div id="cards" v-for="x in infos">
-      <worksComp 
-      :imagePath='x.imagePath' 
-      :Title='x.Title' 
-      :subTitle='x.subTitle' />
+      <worksComp :imagePath='x.imagePath' :Title='x.Title' :subTitle='x.subTitle' />
     </div>
   </div>
 </template>
@@ -81,10 +83,16 @@ export default {
   height: 450px;
 }
 
-p{
+p {
   font-size: 2rem;
   font-weight: 600;
   text-align: center;
   padding: 30px;
+}
+
+@media (max-width: 600px) {
+  .main {
+    justify-content: center;
+  }
 }
 </style>

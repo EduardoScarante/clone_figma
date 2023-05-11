@@ -50,9 +50,16 @@ section {
     margin-bottom: 50px;
 }
 
-section:hover{
-  opacity: 0.8;
-  box-shadow: 10px 10px 20px rgb(228, 228, 228);
+@media (max-width: 600px) {
+    section {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+section:hover {
+    opacity: 0.8;
+    box-shadow: 10px 10px 20px rgb(228, 228, 228);
 }
 
 #content {

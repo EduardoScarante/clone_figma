@@ -31,12 +31,8 @@ main img {
 
 @media (max-width: 600px) {
   #content {
-    flex-direction: column;
-    margin: 20px;
-  }
-
-  main img{
-    margin: 20px;
+    width: 100vw;
+    flex-wrap: wrap;
   }
 }
 </style>
