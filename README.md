@@ -1,14 +1,8 @@
-n# controleEstacionamento
-
 This template should help get you started developing with Vue 3 in Vite.
 
-## Recommended IDE Setup
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+----- PARA EXECUTAR O PROJETO:
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
 
 ## Project Setup
 
@@ -27,3 +21,10 @@ npm run dev
 ```sh
 npm run build
 ```
+
+
+----- PROJETO INSPIRAÇÂO:
+https://www.figma.com/file/tF7IDH1wbLqSq4ztm7hwOu/Portfolio-template---Edit-and-export-HTML-(Community)?type=design&node-id=11-2809&t=4iEiFPB55h6jzjJz-0
+
+
+
