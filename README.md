@@ -23,7 +23,7 @@ npm run build
 ```
 
 
------ PROJETO INSPIRAÇÂO:
+```` PROJETO INSPIRAÇÂO:
 https://www.figma.com/file/tF7IDH1wbLqSq4ztm7hwOu/Portfolio-template---Edit-and-export-HTML-(Community)?type=design&node-id=11-2809&t=4iEiFPB55h6jzjJz-0
 
 
