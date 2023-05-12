@@ -37,7 +37,7 @@ export default {
       const data = { ...this.formData }
 
       const message = this.formData.message.replace(" ","%20")
-      const whatsMessage = `https://wa.me//5541987560475?text=*Nome*:%20${this.formData.username}%20*E-mail*%20${this.formData.email}%20*Mensagem*%20${message}`
+      const whatsMessage = `https://wa.me//5541987560475?text=*Nome*:%20${this.formData.username}%20%0A*E-mail*%20${this.formData.email}%20%0A*Mensagem*%20${message}`
   
       
       let confirmeBox = confirm("Você será redirecionado ao whatsApp")
