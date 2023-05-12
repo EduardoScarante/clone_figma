@@ -9,6 +9,8 @@ import Behance from '@/assets/icons/behance.png'
 export default {
   data() {
     return {
+      formData: {},
+      defaultValue: '',
       imagePath: [
         {
           'path': Discord,
@@ -26,6 +28,30 @@ export default {
           'path': Behance
         }
       ]
+    }
+  },
+  methods: {
+    submitEvent(event) {
+      event.preventDefault()
+
+      const data = { ...this.formData }
+
+      const message = this.formData.message.replace(" ","%20")
+      const whatsMessage = `https://wa.me//5541987560475?text=*Nome*:%20${this.formData.username}%20*E-mail*%20${this.formData.email}%20*Mensagem*%20${message}`
+  
+      
+      let confirmeBox = confirm("Você será redirecionado ao whatsApp")
+      confirmeBox == true ? window.open(whatsMessage, '_blank') : alert("Permissão negada, informações não enviadas :(")      
+      
+      document.getElementById('form').reset()
+      console.log(JSON.stringify(data));
+
+    },
+    updateValue(event) {
+      const inputName = event.target.name
+      const upgradedValue = event.target.value
+
+      this.formData[inputName] = upgradedValue
     }
   }
 }
@@ -47,12 +73,39 @@ export default {
         </div>
       </div>
     </div>
-    <div class="form">
-      <input placeholder="Name" type="text">
-      <input placeholder="Email" type="email">
-      <input placeholder="Type your message here" type="text" id="longInput">
-      <button>submit</button>
-    </div>
+    <form class="form" id="form" @submit='submitEvent'>
+      <input 
+      class="inputClass"
+      placeholder="Name" 
+      type="text" 
+      name="username" 
+      @keyup="updateValue" 
+      :value="defaultValue"
+      required="true"
+      >
+
+      <input 
+      class="inputClass"
+      placeholder="Email" 
+      type="text" 
+      name="email" 
+      @keyup="updateValue"
+      required="true"
+      >
+
+      <textarea 
+      class="inputClass"
+      id="longInput" 
+      placeholder="Type your message here" 
+      name="message" 
+      type="text" 
+      rows="10"
+      @keyup="updateValue"
+      required="true"
+      ></textarea>
+      <button type="submit">submit</button>
+
+    </form>
   </main>
 </template>
 
@@ -113,7 +166,8 @@ p {
   flex-direction: column;
 }
 
-.form input {
+.form input,
+.form textarea {
   padding: 20px;
   margin-bottom: 20px;
 
@@ -121,12 +175,9 @@ p {
   color: #2D2D2D;
 
   border: none;
-}
 
-.form #longInput {
-  height: 200px;
-
-  display: flex;
+  font-family: "Epilogue", sans-serif;
+  font-weight: 600;
 }
 
 .form button {
@@ -168,7 +219,8 @@ p {
     align-items: center;
   }
 
-  .form input {
+  .form input,
+  .form textarea {
     width: 80vw;
   }
 

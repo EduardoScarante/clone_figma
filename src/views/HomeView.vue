@@ -69,7 +69,6 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-family: "Epilogue", sans-serif;
 
   width: 50%;
 

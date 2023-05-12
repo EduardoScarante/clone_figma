@@ -22,7 +22,6 @@ import HomeView from './views/HomeView.vue'
 <style scoped>
 #logo {
   font-weight: 800;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 header {
