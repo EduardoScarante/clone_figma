@@ -115,6 +115,7 @@ main {
     align-items: center;
 
     padding-bottom: 40px;
+
   }
 
   #hero img {
@@ -129,6 +130,11 @@ main {
     padding: 2rem;
     width: 100%;
 
+  }
+
+  .content h1 {
+    font-size: 4rem;
+    line-height: 6.5rem;
   }
 }
 </style>

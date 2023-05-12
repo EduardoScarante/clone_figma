@@ -17,6 +17,7 @@
 #content {
   height: 180px;
 
+  flex-wrap: wrap;
 
   display: flex;
   flex-direction: row;
@@ -32,7 +33,13 @@ main img {
 @media (max-width: 600px) {
   #content {
     width: 100vw;
-    flex-wrap: wrap;
+    height: 100%;
+  }
+
+  #content img {
+    padding: 30px;
+
+    width: 50% * max-content;
   }
 }
 </style>
