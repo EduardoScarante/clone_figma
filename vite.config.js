@@ -13,6 +13,6 @@ export default defineConfig({
     },
     
   },
-  base: process.env.NODE_ENV === 'production' ? '/visualDesign_Clone/' : '/',
+  base: process.env.NODE_ENV === 'production' ? '/Template_Clone/' : '/',
   
 })
